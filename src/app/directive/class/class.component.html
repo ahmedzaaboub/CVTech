@@ -1,0 +1,21 @@
+<p [ngClass]="{
+
+'ess':ess,
+'barca':barca,
+'milan':milan
+
+}">class works!</p>
+
+<button  class="btn-btn-danger" (click)="changeTeam('team')">etoile</button>
+<div appHeighlight>
+
+Bonjour je teste une directive
+</div>
+
+<ol class="list-group">
+  <li class="list-group-item" *ngFor="let item of teams let ind = index ">
+
+{{item}}-- {{ind}}--
+  </li>
+
+</ol>
